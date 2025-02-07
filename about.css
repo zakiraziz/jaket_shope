@@ -1,117 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Jacket Shop</title>
-    <link rel="stylesheet" href="about.css">
-</head>
-<body>
-    <header>
-        <h1>About Us</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="shop.html">Shop</a> |
-            <a href="about.html">About</a> |
-            <a href="faq.html">FAQ</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
 
-    <!-- About Section -->
-    <section class="about-section">
-        <h2>Welcome to Jacket Shop</h2>
-        <p>At <strong>Jacket Shop</strong>, we provide high-quality, stylish, and durable jackets for every season. Our goal is to bring comfort, fashion, and functionality together.</p>
-    </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
-        <h2>Why Choose Us?</h2>
-        <div class="features">
-            <div>
-                <h3>Premium Quality</h3>
-                <p>We use high-quality materials to ensure durability and comfort.</p>
-            </div>
-            <div>
-                <h3>Trendy Designs</h3>
-                <p>Our jackets are designed to keep you stylish in every season.</p>
-            </div>
-            <div>
-                <h3>Eco-Friendly</h3>
-                <p>We follow sustainable practices to minimize environmental impact.</p>
-            </div>
-            <div>
-                <h3>Worldwide Shipping</h3>
-                <p>Fast and secure delivery to over 50 countries.</p>
-            </div>
-        </div>
-    </section>
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
 
-    <!-- Our Story -->
-    <section class="our-story">
-        <h2>Our Story</h2>
-        <p>Founded in 2020, Jacket Shop started with a simple mission: to create high-quality jackets that combine fashion and functionality. What began as a small online store has now become a trusted brand worldwide.</p>
-    </section>
 
-    <!-- Behind the Scenes -->
-    <section class="behind-the-scenes">
-        <h2>Behind the Scenes</h2>
-        <p>Take a look at how we design, manufacture, and deliver the best jackets.</p>
-        <video controls>
-            <source src="https://samplelib.com/lib/preview/mp4/sample-30s.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-    <!-- Our Process -->
-    <section class="our-process">
-        <h2>How We Make Our Jackets</h2>
-        <div class="process-steps">
-            <div>
-                <h3>1. Designing</h3>
-                <p>Our designers create trendy and comfortable jacket designs.</p>
-            </div>
-            <div>
-                <h3>2. Material Selection</h3>
-                <p>We use only premium and eco-friendly materials.</p>
-            </div>
-            <div>
-                <h3>3. Manufacturing</h3>
-                <p>Each jacket is crafted with precision and care.</p>
-            </div>
-            <div>
-                <h3>4. Quality Check</h3>
-                <p>We test each product to ensure top-notch quality.</p>
-            </div>
-            <div>
-                <h3>5. Shipping</h3>
-                <p>Fast and safe shipping directly to your doorstep.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <img src="https://via.placeholder.com/250" alt="Jacket 1">
-            <img src="https://via.placeholder.com/250" alt="Jacket 2">
-            <img src="https://via.placeholder.com/250" alt="Jacket 3">
-            <img src="https://via.placeholder.com/250" alt="Jacket 4">
-            <img src="https://via.placeholder.com/250" alt="Jacket 5">
-            <img src="https://via.placeholder.com/250" alt="Jacket 6">
-        </div>
-    </section>
+nav a:hover {
+    text-decoration: underline;
+}
 
-    <!-- Contact Us -->
-    <section class="contact-us">
-        <h2>Contact Us</h2>
-        <p>Email: support@jacketshop.com</p>
-        <p>Phone: +123 456 7890</p>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Jacket Shop. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Sections */
+.about-section, .why-choose-us, .our-story, .behind-the-scenes, .our-process, .gallery, .contact-us {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Why Choose Us */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.features div {
+    background: #ddd;
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+/* Our Process */
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.process-steps div {
+    background: #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+
+/* Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Video */
+video {
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+
