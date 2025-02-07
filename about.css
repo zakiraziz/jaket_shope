@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.about-section, .why-choose-us, .our-story, .behind-the-scenes, .our-process, .gallery, .contact-us {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Us */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.features div {
+    background: #ddd;
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Our Process */
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.process-steps div {
+    background: #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Video */
+video {
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
