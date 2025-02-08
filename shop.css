@@ -49,3 +49,47 @@ nav a:hover {
 .hero h2 {
     font-size: 36px;
 }
+.shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.shop-now:hover {
+    background-color: #e6b800;
+}
+
+/* Products Section */
+.products, .trending, .bestsellers {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 200px;
+    border-radius: 10px;
+}
