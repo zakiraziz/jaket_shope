@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacket Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jacket Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#bestsellers">Best Sellers</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="darkModeToggle">Dark Mode</button></li>
+                <li><button id="cartBtn">Cart (<span id="cartCount">0</span>)</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Find Your Perfect Jacket</h2>
+        <p>Stylish, Comfortable, and Affordable</p>
+        <a href="#shop" class="shop-now">Shop Now</a>
+    </section>
+
+    <section id="shop" class="products">
+        <h2>Our Collection</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="jacket1.jpg" alt="Jacket 1">
+                <h3>Winter Jacket</h3>
+                <p>$59.99 <span class="discount">$79.99</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="jacket2.jpg" alt="Jacket 2">
+                <h3>Leather Jacket</h3>
+                <p>$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="jacket3.jpg" alt="Jacket 3">
+                <h3>Hooded Jacket</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
