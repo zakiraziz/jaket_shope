@@ -1,0 +1,126 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<link rel="stylesheet" href="cart.css">
+<body>
+
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="about.html">About</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Shopping Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Stock</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                    <th>Move to Wishlist</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Leather Jacket</td>
+                    <td><img src="https://via.placeholder.com/80" alt="Leather Jacket"></td>
+                    <td>$120</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>In Stock</td>
+                    <td>$120</td>
+                    <td><button>Remove</button></td>
+                    <td><button>Add to Wishlist</button></td>
+                </tr>
+                <tr>
+                    <td>Denim Jacket</td>
+                    <td><img src="https://via.placeholder.com/80" alt="Denim Jacket"></td>
+                    <td>$80</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>In Stock</td>
+                    <td>$80</td>
+                    <td><button>Remove</button></td>
+                    <td><button>Add to Wishlist</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Estimated Delivery: 3-5 Business Days</h3>
+
+        <h3>Subtotal: $200</h3>
+
+        <label for="discount">Discount Code:</label>
+        <input type="text" id="discount" placeholder="Enter Code">
+        <button>Apply</button>
+
+        <p>Shipping: $10</p>
+        <p>Tax (5%): $10</p>
+        <h2>Grand Total: $220</h2>
+
+        <h3>Gift Wrap:</h3>
+        <label><input type="checkbox"> Add Gift Wrap for $5</label>
+
+        <h3>Order Notes:</h3>
+        <textarea placeholder="Add any special requests..."></textarea>
+
+        <h3>Payment Methods</h3>
+        <label><input type="radio" name="payment" checked> Credit/Debit Card</label><br>
+        <label><input type="radio" name="payment"> PayPal</label><br>
+        <label><input type="radio" name="payment"> Cash on Delivery</label><br>
+
+        <button>Proceed to Checkout</button>
+        <button>Continue Shopping</button>
+    </section>
+
+    <section>
+        <h2>Saved for Later</h2>
+        <p>Items you might want to buy later:</p>
+        <ul>
+            <li>Hooded Jacket - $90 <button>Add to Cart</button></li>
+            <li>Winter Coat - $150 <button>Add to Cart</button></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Recommended Products</h2>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Jacket">
+            <p>Sports Jacket - $110</p>
+            <button>Add to Cart</button>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/100" alt="Jacket">
+            <p>Casual Jacket - $70</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Customer Support</h2>
+        <p>Need help? <a href="contact.html">Contact us</a> or start a <button>Live Chat</button>.</p>
+    </section>
+
+    <section>
+        <h2>Order Tracking</h2>
+        <p>Already placed an order? <a href="track-order.html">Track your order here</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jacket Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
